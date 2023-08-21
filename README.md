@@ -53,11 +53,6 @@ https://localhost:44344/api/Event/UpdateEvent/{id}   (Update event by "eventId")
 https://localhost:44344/api/Event/DeleteEvent/{id}   (Delete event by "eventId")
 
 ## What I have made:
-I created models: User, Booking, Event.
-I made validations for UserRegisterModel and Event. I used FluentValidator.
-I created services and controllers for these models.
-I created a TokenGenerator service that generates a token when logging into the system, conditionally specifying a 365-day token validation period.(JWT,Authentication,Mvc.NewtonsoftJson)
-I created Helpers, where I defined AppSettings Secret and HashSettings, which ensures that the password entered by the user is transferred to the database as a hash.(TweetinviAPI)
-I created a SQL database and connected the code to it (ORM) through the Entity Framework. I have also added logs, and in case of logging in, the log data is automatically stored in the database.
-I tested the project with Postman and Swagger and it returned the status codes I expected. Everything works fine.
-I wrote tests for the project on xUnit. I created Fake Services and tested all services.
+I created models: Customer, Booking, Event. I have done validation for UserRegisterModel and Event. I used FluentValidator. I have created services and controllers for these models. I've created a TokenGenerator service that generates a token on login, conditionally specifying a 365-day token validation period. (JWT, Authentication, Mvc.NewtonsoftJson) I created Helpers, where I defined AppSettings Secret and HashSettings, which ensures that the password entered by the user is transferred to the database as a hash. (TweetinviAPI) I created a SQL database, performed migrations and connected the code to it (ORM) Entity Framework through I also added the logs and log data is automatically saved in the database in case of login. 
+I tested the project with Postman and Swagger and it returned the status codes I expected. Everything works fine. 
+I wrote the tests for the project on xUnit. I created fake services and tested all services.
